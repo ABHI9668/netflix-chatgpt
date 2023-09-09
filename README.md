@@ -2,6 +2,8 @@
 
 - Create my app with the help of create react app tool.
 - Add tailwind css with my app with some commands.
+- Header
+- Login Form
 
 ## Features in my App
  - Login/sign up page

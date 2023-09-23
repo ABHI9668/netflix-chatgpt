@@ -27,6 +27,17 @@
 - Fetch data from trailer video.
 - Update the store with Trailer video data.
 - embed the youtube video and make it autoplay and mute.
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- Made the Browse page amazing with tailwind css
+- usePopularMovies Custom Hooks
+- GPT search page
+- GPT search bar
+- Multi-language feature in our app
+- Get open AI API key
+- Get search API call
+- Made our site responsive
 
 
 

@@ -13,9 +13,11 @@ const Videobg = ({movieId}) => {
     useTrailerVideo(movieId);
    
   return (
-    <div className=''>
+    <div className='w-full'>
           <iframe  className='w-screen aspect-video'
-          src={"https://www.youtube.com/embed/"+trailerSelector?.key+"?autoplay=1&mute=1"} ></iframe>
+          src={"https://www.youtube.com/embed/"+trailerSelector?.key+"?autoplay=1&mute=1"} 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
     </div>
   )
 }

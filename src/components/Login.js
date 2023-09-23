@@ -6,7 +6,7 @@ import { auth } from '../utils/firebase';
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import {USER_AVATAR} from "../utils/constants"
+import {BG_IMAGE, USER_AVATAR} from "../utils/constants"
 
 const Login = () => {
     const dispatch = useDispatch();
@@ -48,7 +48,7 @@ const Login = () => {
                         SeterrMessage(error.message)
 
                     });
-                    console.log(user);
+                 
 
 
                     // ...
@@ -83,13 +83,13 @@ const Login = () => {
         <div >
             <Header />
 
-            <div className='absolute'>
-                <img src="https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/5e7c383c-1f88-4983-b4da-06e14c0984ba/IN-en-20230904-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-                    className=''
+            <div className='absolute w-screen aspect-video'>
+                <img src={BG_IMAGE}
+                    className='h-screen object-cover md:w-full'
                     alt="" />
             </div>
 
-            <form onSubmit={(e) => { e.preventDefault() }} className='p-12 bg-black absolute w-3/12 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-75'>
+            <form onSubmit={(e) => { e.preventDefault() }} className=' w-full p-12 bg-black absolute md:w-3/12 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-75'>
 
                 <h2 className='text-3xl font-bold py-4'>{IsSigInForm ? "Sign In" : "Sign Up"}</h2>
 

@@ -68,7 +68,7 @@ const Header = () => {
           </select>}
 
           <button className=' mt-2 md:py-2 px-4 md:m-2 bg-red-800 rounded-lg text-white h-10' onClick={handleGptSearch}>{showGptSearch ? "Home" : "GPT Search"}</button>
-          <a href="https://www.linkedin.com/in/abhi9668/"><img
+          <a href="https://www.linkedin.com/in/abhi9668/" target='_blank'><img
             src={user?.photoURL}
             alt=""
             className=' hidden md:block w-12 h-10 mt-2 ml-2 mr-2 rounded-lg cursor-pointer'

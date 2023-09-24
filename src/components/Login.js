@@ -85,7 +85,7 @@ const Login = () => {
 
             <div className='absolute w-screen aspect-video '>
                 <img src={BG_IMAGE}
-                    className='h-screen object-cover '
+                    className='h-screen object-cover md:w-full md:h-full'
                     alt="" />
             </div>
 

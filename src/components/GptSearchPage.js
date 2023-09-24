@@ -6,10 +6,10 @@ import { BG_IMAGE } from '../utils/constants'
 const GptSearchPage = () => {
   return (
     <>
-    <div className='absolute -z-10'>
+    <div className='fixed -z-10 w-full'>
 
       <img src={BG_IMAGE}
-        className='h-screen object-cover'
+        className='h-screen object-cover md:w-[100%]'
         alt="" />
         </div>
         <div className=''>

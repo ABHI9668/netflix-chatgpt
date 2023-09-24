@@ -83,9 +83,9 @@ const Login = () => {
         <div >
             <Header />
 
-            <div className='absolute w-screen aspect-video'>
+            <div className='absolute w-screen aspect-video '>
                 <img src={BG_IMAGE}
-                    className='h-screen object-cover md:w-full'
+                    className='h-screen object-cover '
                     alt="" />
             </div>
 

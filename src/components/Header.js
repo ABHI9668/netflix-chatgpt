@@ -60,22 +60,22 @@ const Header = () => {
         className="w-38 h-20 mt-2 mx-auto md:mx-0"
         alt="" />
       {user &&
-        <div className='flex  p-4 justify-between'>
+        <div className='flex  p-4 justify-between -mt-4 md:-mt-0'>
          {showGptSearch && <select name="" id="" className='p-1 bg-gray-900 text-white m-2 rounded-lg' onChange={handleLanguageChange}>
             {SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
 
 
           </select>}
 
-          <button className='py-2 px-4 m-2 bg-red-800 rounded-lg text-white' onClick={handleGptSearch}>{showGptSearch ? "Home" : "GPT Search"}</button>
+          <button className=' mt-2 md:py-2 px-4 md:m-2 bg-red-800 rounded-lg text-white h-10' onClick={handleGptSearch}>{showGptSearch ? "Home" : "GPT Search"}</button>
           <a href="https://www.linkedin.com/in/abhi9668/"><img
             src={user?.photoURL}
             alt=""
-            className='w-12 h-10 mt-2 ml-2 mr-2 rounded-lg cursor-pointer'
+            className=' hidden md:block w-12 h-10 mt-2 ml-2 mr-2 rounded-lg cursor-pointer'
             
             /></a>
           
-          <button className='hidden md:block text-white  bg-red-800 rounded-lg h-10 mt-2 px-2 font-bold' onClick={handleSignout}>Sign Out</button>
+          <button className=' text-white  bg-red-800 rounded-lg h-10 mt-2 px-2' onClick={handleSignout}>Sign Out</button>
         </div>}
     </div>
   )

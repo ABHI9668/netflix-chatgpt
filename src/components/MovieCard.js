@@ -1,26 +1,26 @@
 import React, { useState } from 'react'
 import { IMG_CDN } from '../utils/constants'
 
-const MovieCard = ({posterPath}) => {
-    const [isHovered, setIsHovered] = useState(false);
+const MovieCard = ({ posterPath }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-      };
-    
-      const handleMouseLeave = () => {
-        setIsHovered(false);
-      };
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
 
-    const imageStyle = {
-        transform: isHovered ? 'scale(1.1)' : 'scale(1)', // Enlarge on hover
-        transition: 'transform 0.3s ease-in-out', // Smooth transition effect
-      };
-     
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const imageStyle = {
+    transform: isHovered ? 'scale(1.1)' : 'scale(1)', // Enlarge on hover
+    transition: 'transform 0.3s ease-in-out', // Smooth transition effect
+  };
+
 
   return (
-    <div className='w-48 pr-4 ' onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave}>
-      <img src={IMG_CDN+posterPath} alt="moviePoster" style={imageStyle} className='rounded-lg' />
+    <div className='md:mr-3 md:w-44 w-12/12 ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <img src={IMG_CDN + posterPath} alt="moviePoster" style={imageStyle} className=' h-[100%] mr-20 p-2 rounded-xl' />
     </div>
   )
 }
